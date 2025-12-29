@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration form</title>
+	<style>
+		body{
+			background-color: powderblue;
+
+		}
+		table{
+			width: 600px;
+			height: 40px;
+			background-color: white;
+			border-collapse: collaps;
+
+		}
+		.l1{
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left:20px;
+			padding-right: 20px;
+			background-color:green;
+			width: 200;
+			height: 20px;
+			color: white;
+			font-weight: bolder;
+
+
+		
+		}
+		.required::before{
+			content:"*";
+			color: red;
+			font-size:20;
+
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<table  border="1"  cellspacing="1px" cellpadding="20px">
+		<tr  colspan="2" class="l1">
+			<td align="center" colspan="2"> Registration Form</td>
+		</tr>
+		<tr>
+			<td>First<br> Name:</td>
+			<td>
+				<label for="text"></label>
+				<input type="text" id="text">
+			</td>
+			<tr>
+				<td>password:</td>
+				<td>
+					<label for="pass"></label>
+					<input type="password" id="pass">
+				</td>
+			</tr>
+			<tr>
+				<td class="required">Email:</sub></td>
+				<td>
+					<label for="mail"></label>
+					<input type="email" id="email">
+				</td>
+				<tr>
+					<td  class="required">Phone:</td>
+					<td>
+						<label for="cell"></label>
+						<input type="phone" id="phone">
+					</td>
+					<tr>
+						<td>Age:</td>
+						<td>
+							<label for="age"></label>
+							<input type="text" id="age">
+						</td>
+						<tr>
+							<td>Date of<br>Birth:</td>
+							<td>
+								<label for="birth"></label>
+								<input type="date" id="birth" value="mm/dd/yyyy">
+							</td>
+						
+		</tr>
+		<tr>
+			<td>Time:</td>
+			<td>
+				<label for="clock"></label>
+				<input type="time" id="clock">
+			</td>
+		</tr>
+		<tr>
+			<td>Date and <br>Time:</td>
+			<td>
+				<label for="date and time"></label>
+				<input type="datetime-local" id="date and time"  name="date and time" value="mm/dd/yyyy,">
+			</td>
+		</tr>
+		<tr>
+			<td>Month:</td>
+			<td>
+				<label for="month"></label>
+				<input type="month" id="month">
+			</td>
+		</tr>
+		<tr>
+			<td>week:</td>
+			<td>
+				<label for="week"></label>
+				<input type="week" id="week" value="week,">
+			</td>
+		</tr>
+		<tr>
+			<td>Color:</td>
+			<td>
+				<label for="color"></label>
+				<input type="color" id="color" value="black">
+			</td>
+		</tr>
+		<tr>
+			<td>Range:</td>
+			<td>
+				<label for="range"></label>
+				<input type="range" id="range">
+		</td>
+		</tr>
+		<tr>
+			<td>Checkbox:</td>
+			<td><label for="check"></label>
+			<input type="checkbox" id="check">
+		</td>
+	</tr>
+	<tr>
+		<td>Radio<br>Button:</td>
+		<td><label for="option1">option 1</label>
+			<input type="radio" id="option1">
+			<label for="option2">option2</label>
+			<input type="radio" id="option2">
+		</td>
+	</tr>
+	<tr>
+		<td>File:</td>
+		<td>
+			<label for="no"></label>
+			<input type="file" id="no" name="no" value="choose file">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			<input type="submit" id="submit" value="submit">
+		</td>
+	</tr>
+
+	</table>
+</center>
+</body>
+</html>
